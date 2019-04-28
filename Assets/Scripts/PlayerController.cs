@@ -22,7 +22,15 @@ public class PlayerController : PhysicsObject
     protected override void ComputeVelocity()
     {
         Vector2 move = Vector2.zero; // clear previous movement data
-        move.x = Input.GetAxis("Horizontal"); // get the current amount of left/right input.
+        // accept input from either the left joystick or the dpad
+        if (Input.GetAxis("DPadXAxis") != 0)
+        {
+            move.x = (Input.GetAxis("DPadXAxis")); // needs to have an entry in the input manager for Joystick axis 6 (xbox360 controller D pad)
+        }
+        else if (Input.GetAxis("Horizontal") != 0)
+        {
+            move.x = (Input.GetAxis("Horizontal"));
+        }
         if (Input.GetButtonDown("Jump") && grounded) // only permit jumps if we're stood on something - could be extended to allow double jumps etc.
         {
             velocity.y = jumpTakeOffSpeed; // put the configured 'jump power' into the 'velocity' Vector2 variable.
@@ -34,7 +42,7 @@ public class PlayerController : PhysicsObject
                 velocity.y = velocity.y * 0.5f; // ... then slow the player's vertical movement by half.
             }
         }
-        bool flipSprite = (spriteRenderer.flipX ? (move.x > 0.01f) : (move.x < -0.01f)); 
+        bool flipSprite = (spriteRenderer.flipX ? (move.x > 0.01f) : (move.x < -0.01f));
         if (flipSprite)
         {
             spriteRenderer.flipX = !spriteRenderer.flipX; // make the sprite face in the direction it is moving.
