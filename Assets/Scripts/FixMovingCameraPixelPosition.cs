@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class FixMovingCameraPixelPosition : MonoBehaviour
 {
+
+    // Force the camera to follow the player around the level
+    // 
+
     public GameObject player;
     public Camera main_camera;
 
@@ -26,7 +30,7 @@ public class FixMovingCameraPixelPosition : MonoBehaviour
             main_camera.transform.position = new_pos;
         }
     }
-    public float pixelToUnits = 40f;
+    public float pixelToUnits = 16f;
 
     public float RoundToNearestPixel(float unityUnits)
     {

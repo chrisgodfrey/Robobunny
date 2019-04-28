@@ -2,46 +2,49 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : PhysicsObject {
+public class PlayerController : PhysicsObject
+{
+    // Inherits the custom physics functionality provided by PhysicsObject
+    // Gives us the ability to input the player's horizontal velocity, do cancellable jumps and switch animation states
 
-    public float maxSpeed = 7;
-    public float jumpTakeOffSpeed = 7;
-
-    private SpriteRenderer spriteRenderer;
-    private Animator animator;
+    public float maxSpeed = 7; // maximum speed of the player
+    public float jumpTakeOffSpeed = 7; // jump power of the player
+    private SpriteRenderer spriteRenderer; // the sprite of the parent object
+    private Animator animator; // the Animator of the parent object
 
     // Use this for initialization
-    void Awake () 
+    void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer> ();    
-        animator = GetComponent<Animator> ();
+        spriteRenderer = GetComponent<SpriteRenderer>(); // store reference to the player's sprite
+        animator = GetComponent<Animator>(); // store reference to the player's Animator
     }
 
     protected override void ComputeVelocity()
     {
-        Vector2 move = Vector2.zero;
-
-        move.x = Input.GetAxis ("Horizontal");
-
-    if (Input.GetButtonDown ("Jump") && grounded) {
-            velocity.y = jumpTakeOffSpeed;
-        } else if (Input.GetButtonUp ("Jump")) 
+        Vector2 move = Vector2.zero; // clear previous movement data
+        move.x = Input.GetAxis("Horizontal"); // get the current amount of left/right input.
+        if (Input.GetButtonDown("Jump") && grounded) // only permit jumps if we're stood on something - could be extended to allow double jumps etc.
         {
-            if (velocity.y > 0) {
-                velocity.y = velocity.y * 0.5f;
+            velocity.y = jumpTakeOffSpeed; // put the configured 'jump power' into the 'velocity' Vector2 variable.
+        }
+        else if (Input.GetButtonUp("Jump")) // if the jump button was released mid jump (aka jump cancelled)...
+        {
+            if (velocity.y > 0) // ...and if the player is still moving vertically... (i.e. they've not hit the ground yet)
+            {
+                velocity.y = velocity.y * 0.5f; // ... then slow the player's vertical movement by half.
             }
         }
-
-        bool flipSprite = (spriteRenderer.flipX ? (move.x > 0.01f) : (move.x < -0.01f));
-        if (flipSprite) 
+        bool flipSprite = (spriteRenderer.flipX ? (move.x > 0.01f) : (move.x < -0.01f)); 
+        if (flipSprite)
         {
-            spriteRenderer.flipX = !spriteRenderer.flipX;
+            spriteRenderer.flipX = !spriteRenderer.flipX; // make the sprite face in the direction it is moving.
         }
-
-        animator.SetBool ("grounded", grounded);
-        animator.SetFloat ("velocityX", Mathf.Abs (velocity.x) / maxSpeed);
-        animator.SetFloat ("velocityY", Mathf.Abs (velocity.y) / maxSpeed);
-
+        // send some data to the Animator so that it can change animation according to the player's current movement
+        animator.SetBool("grounded", grounded);
+        animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
+        animator.SetFloat("velocityY", Mathf.Abs(velocity.y) / maxSpeed);
+        // set the player's target direction + speed (i.e. vector2) based on the above contraints, input, and calculations.
+        // 'targetVelocity' will be used by the parent class 'PhysicsObject' to move the player's transform directly, bypassing Unity's real world physics.
         targetVelocity = move * maxSpeed;
     }
 }
