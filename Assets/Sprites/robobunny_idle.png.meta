@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: 97d56025027913c4a9f0dddb34e738cd
+guid: 16ec3cf966295f3479dac198ee4924b8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2920494917470171052
-    second: robobunny_run_0
+      213: 5763920764687136575
+    second: robobunny_idle_0
   - first:
-      213: -7237041891218690568
-    second: robobunny_run_1
+      213: -5975057848287912032
+    second: robobunny_idle_1
   - first:
-      213: -2624132504919257400
-    second: robobunny_run_2
+      213: 736037464787301525
+    second: robobunny_idle_2
   - first:
-      213: -2548074755983530161
-    second: robobunny_run_3
-  - first:
-      213: 5060900668427024113
-    second: robobunny_run_4
-  - first:
-      213: -3071844569286879966
-    second: robobunny_run_5
+      213: -2857847160408655916
+    second: robobunny_idle_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -102,7 +96,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: robobunny_run_0
+      name: robobunny_idle_0
       rect:
         serializedVersion: 2
         x: 16
@@ -116,14 +110,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e3db9d9294586648b1938c7672bc6dd
-      internalID: 2920494917470171052
+      spriteID: bcb00297947ddfc42a618d774d9c7e59
+      internalID: 5763920764687136575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: robobunny_run_1
+      name: robobunny_idle_1
       rect:
         serializedVersion: 2
         x: 48
@@ -137,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3f3b860291ece64abe575db69334dae
-      internalID: -7237041891218690568
+      spriteID: 3d252832bf365d848ae33390fefabd08
+      internalID: -5975057848287912032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: robobunny_run_2
+      name: robobunny_idle_2
       rect:
         serializedVersion: 2
         x: 80
@@ -158,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6ae56008f229ca468a903f85270e0fa
-      internalID: -2624132504919257400
+      spriteID: f57f3dbfed8b80b4b88475a0216113a4
+      internalID: 736037464787301525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: robobunny_run_3
+      name: robobunny_idle_3
       rect:
         serializedVersion: 2
         x: 112
@@ -179,50 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b940b9a9a8f4c39439b95fa06b371176
-      internalID: -2548074755983530161
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: robobunny_run_4
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 328c2256fc404174b983cb456d5fdce0
-      internalID: 5060900668427024113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: robobunny_run_5
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1266d75c0c9bd294ea728543816c290c
-      internalID: -3071844569286879966
+      spriteID: cf5dee5ee696f82468e09bd42204453b
+      internalID: -2857847160408655916
       vertices: []
       indices: 
       edges: []
@@ -230,7 +182,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c9bdd3965487b1349ad5541a22e7bae9
+    spriteID: 74f428a1ee974f24a9b3f0e4378a4273
     internalID: 0
     vertices: []
     indices: 

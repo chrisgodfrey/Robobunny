@@ -1,25 +1,22 @@
 fileFormatVersion: 2
-guid: 97d56025027913c4a9f0dddb34e738cd
+guid: 92d8dcedd7598e04f87deb3015b8c2c6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2920494917470171052
-    second: robobunny_run_0
+      213: 368543389579951487
+    second: slime_0
   - first:
-      213: -7237041891218690568
-    second: robobunny_run_1
+      213: -458641133534639524
+    second: slime_1
   - first:
-      213: -2624132504919257400
-    second: robobunny_run_2
+      213: 2542698315722941828
+    second: slime_2
   - first:
-      213: -2548074755983530161
-    second: robobunny_run_3
+      213: -3711818451352614709
+    second: slime_3
   - first:
-      213: 5060900668427024113
-    second: robobunny_run_4
-  - first:
-      213: -3071844569286879966
-    second: robobunny_run_5
+      213: -6875693984060724655
+    second: slime_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -102,7 +99,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: robobunny_run_0
+      name: slime_0
       rect:
         serializedVersion: 2
         x: 16
@@ -110,20 +107,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e3db9d9294586648b1938c7672bc6dd
-      internalID: 2920494917470171052
+      spriteID: 767b363b15c51154d86d31364ab4c9b8
+      internalID: 368543389579951487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: robobunny_run_1
+      name: slime_1
       rect:
         serializedVersion: 2
         x: 48
@@ -131,20 +128,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3f3b860291ece64abe575db69334dae
-      internalID: -7237041891218690568
+      spriteID: 330ec044d796d81418b8558b09bbf9f7
+      internalID: -458641133534639524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: robobunny_run_2
+      name: slime_2
       rect:
         serializedVersion: 2
         x: 80
@@ -152,20 +149,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6ae56008f229ca468a903f85270e0fa
-      internalID: -2624132504919257400
+      spriteID: 82c6183fa8f70a84aabc201e44537e6c
+      internalID: 2542698315722941828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: robobunny_run_3
+      name: slime_3
       rect:
         serializedVersion: 2
         x: 112
@@ -173,20 +170,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b940b9a9a8f4c39439b95fa06b371176
-      internalID: -2548074755983530161
+      spriteID: cb112310f2d5965408d7999c0ae7d5ce
+      internalID: -3711818451352614709
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: robobunny_run_4
+      name: slime_4
       rect:
         serializedVersion: 2
         x: 144
@@ -194,35 +191,14 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 328c2256fc404174b983cb456d5fdce0
-      internalID: 5060900668427024113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: robobunny_run_5
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1266d75c0c9bd294ea728543816c290c
-      internalID: -3071844569286879966
+      spriteID: 3d307fa94ec16b54b9ef5cecdfe05b3b
+      internalID: -6875693984060724655
       vertices: []
       indices: 
       edges: []
@@ -230,7 +206,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c9bdd3965487b1349ad5541a22e7bae9
+    spriteID: 73fbea07aadacf046b1333052797aa2f
     internalID: 0
     vertices: []
     indices: 
