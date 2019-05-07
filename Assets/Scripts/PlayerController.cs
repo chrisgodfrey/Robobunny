@@ -8,7 +8,7 @@ public class PlayerController : PhysicsObject
     // Gives us the ability to input the player's horizontal velocity, do cancellable jumps and switch animation states
 
     public float maxSpeed = 7; // maximum speed of the player
-    public float jumpTakeOffSpeed = 7; // jump power of the player
+    public float jumpTakeOffSpeed = 16; // jump power of the player
     private SpriteRenderer spriteRenderer; // the sprite of the parent object
     private Animator animator; // the Animator of the parent object
 

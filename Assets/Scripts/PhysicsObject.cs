@@ -7,7 +7,7 @@ public class PhysicsObject : MonoBehaviour
     //Custom physics engine. Handles gravity, collisions, uses raycasting to detect if object is standing on ground
 
     public float minGroundNormalY = .65f; // angle for collider below parent object to be considered 'ground'
-    public float gravityModifier = 1f; // gravity amount
+    public float gravityModifier = 4.0f; // gravity amount
     protected Vector2 targetVelocity; // direction + speed of the parent object - populated by method 'ComputeVelocity'
     protected bool grounded; // is the parent object standing on ground
     protected Vector2 groundNormal; // a perpendicalar vector from the ground upwards - used to determine the 'groundNormal'
